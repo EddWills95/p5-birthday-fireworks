@@ -7,10 +7,10 @@ function Particle(x, y, firework = true) {
     this.lifespan = 255;
 
     if (firework) {
-        this.vel = createVector(0, random(-12, -3));
+        this.vel = createVector(0, random(-10, 2));
     } else {
         this.vel = p5.Vector.random2D();
-        this.vel.mult(random(2, 6));
+        this.vel.mult(random(2, 4));
     }
     this.acc = createVector(0, 0);
   

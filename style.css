@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-wrapper {
+    width: 30%;
+    height: 5rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: ghostwhite;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

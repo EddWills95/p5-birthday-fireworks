@@ -9,19 +9,16 @@ function preload() {
 
 
 function setup() {
-  createCanvas(700,400);
-  gravity = createVector(0, 0.2);
-  // stroke(255);
+  var canvas = createCanvas(window.innerWidth, window.innerHeight);
+  gravity = createVector(0, 0.15);
   strokeWeight(4);
-  textFont(font);
-  textSize(50);
 }
 
 function draw() {
   background(51);
 
   var random_number = random(1);
-  if (random_number < 0.04) { 
+  if (random_number < 0.2) { 
     fireworks.push(new Firework());
   }
   for (var i = fireworks.length - 1; i >= 0; i--) {
@@ -32,9 +29,6 @@ function draw() {
       fireworks.splice(i, 1);
     }
   }
-
-  fill(255);
-  text('Happy Birthday Lana!', width/5, height/3);
 }
 
 function mouseClicked() {
