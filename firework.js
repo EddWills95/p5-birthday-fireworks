@@ -29,6 +29,7 @@ function Firework(x = null, y = null) {
 
 
             if (this.particles.length < 5) {
+                // Collision Logic
                 for(var j = this.particles.length -1; j >= 0; j--) {
                     if (this.particles[i].pos.y <= this.particles[j].pos.y + 2 
                             || this.particles[i].pos.y <= this.particles[j].pos.y - 2) {
