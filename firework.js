@@ -30,12 +30,12 @@ function Firework(x = null, y = null) {
 
             if (this.particles.length < 5) {
                 for(var j = this.particles.length -1; j >= 0; j--) {
-                    if (this.particles[i].pos.y <= this.particles[j].pos.y) {
-                        console.log('explode');
+                    if (this.particles[i].pos.y <= this.particles[j].pos.y + 2 
+                            || this.particles[i].pos.y <= this.particles[j].pos.y - 2) {
                         this.explode();
                     }
-                    if (this.particles[i].pos.x <= this.particles[j].pos.x) {
-
+                    if (this.particles[i].pos.x <= this.particles[j].pos.x + 2 
+                            || this.particles[i].pos.x <= this.particles[j].pos.x - 2) {
                         this.explode();
                     }
                 }
