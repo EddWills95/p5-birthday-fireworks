@@ -9,8 +9,8 @@ function preload() {
 
 
 function setup() {
-  var canvas = createCanvas(window.innerWidth, window.innerHeight);
-  gravity = createVector(0, 0.15);
+  var canvas = createCanvas(window.innerWidth, 500);
+  gravity = createVector(0, 0.1);
   strokeWeight(4);
 }
 
@@ -18,7 +18,7 @@ function draw() {
   background(51);
 
   var random_number = random(1);
-  if (random_number < 0.2) { 
+  if (random_number < 0.35) { 
     fireworks.push(new Firework());
   }
   for (var i = fireworks.length - 1; i >= 0; i--) {

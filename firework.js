@@ -1,4 +1,4 @@
-particle_count = 55; 
+particle_count = 45; 
 
 function Firework(x = null, y = null) {
     this.determine_side = function() {        
